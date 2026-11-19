@@ -816,9 +816,9 @@ body::after{content:"";position:fixed;inset:0;z-index:2147483000;pointer-events:
 .tl .stage .yr{display:inline-block;margin-left:6px;padding:3px 9px;border-radius:999px;font-size:12px;font-weight:600;vertical-align:middle;background:rgba(251,104,53,.15);color:var(--orange)}
 @media (min-width:901px){
 #maria .me{align-items:start}
-#maria .dos{position:sticky;top:104px}
-#maria .tl .stage{padding:44px 0 44px 48px;min-height:20vh}
-#maria .tl .stage::before{top:51px}
+#maria.sec{overflow:clip}#maria .dos{position:sticky;top:104px}
+#maria .tl .stage{padding:56px 0 56px 48px;min-height:32vh}#maria .dos-card img{max-height:calc(100vh - 290px);min-height:340px}
+#maria .tl .stage::before{top:63px}
 }
 @media (prefers-reduced-motion:reduce){.tl .stage{opacity:1}}
 
@@ -828,7 +828,7 @@ body::after{content:"";position:fixed;inset:0;z-index:2147483000;pointer-events:
 .tm:nth-child(1){--r:-1.6deg}.tm:nth-child(2){--r:1.2deg}.tm:nth-child(3){--r:-.8deg}.tm:nth-child(4){--r:1.8deg}
 .tm.rv.in{animation:swing 2.4s cubic-bezier(.3,.7,.3,1) both}
 .tm:nth-child(2).rv.in{animation-delay:.12s}.tm:nth-child(3).rv.in{animation-delay:.24s}.tm:nth-child(4).rv.in{animation-delay:.36s}
-.tm.rv.in:hover{animation:swing-s 1.6s cubic-bezier(.3,.7,.3,1)}
+
 @keyframes swing{0%{rotate:calc(var(--r) + 9deg)}25%{rotate:calc(var(--r) - 5deg)}50%{rotate:calc(var(--r) + 2.5deg)}75%{rotate:calc(var(--r) - 1deg)}100%{rotate:var(--r)}}
 @keyframes swing-s{0%{rotate:var(--r)}20%{rotate:calc(var(--r) + 3.5deg)}45%{rotate:calc(var(--r) - 2.2deg)}70%{rotate:calc(var(--r) + 1deg)}100%{rotate:var(--r)}}
 .lan{position:absolute;left:50%;bottom:calc(100% + 14px);width:0;height:150px;pointer-events:none}
@@ -862,7 +862,7 @@ body::after{content:"";position:fixed;inset:0;z-index:2147483000;pointer-events:
 .tm .badge h3{font-size:15px}.tm .badge p{font-size:12px}.badge .tm-bio{font-size:12px!important}
 .bc{width:44%}
 }
-@media (prefers-reduced-motion:reduce){.tm.rv.in,.tm.rv.in:hover{animation:none}}
+@media (prefers-reduced-motion:reduce){.tm.rv.in{animation:none}}
 /* ===== merged process summary ===== */
 .hw-sum{margin-top:clamp(40px,5vw,64px);padding:clamp(22px,3vw,32px);border-radius:22px;background:color-mix(in srgb,var(--fg) 4%,transparent);box-shadow:inset 0 0 0 1px var(--ln)}
 .hw-sum-k{display:block;margin-bottom:16px;font:600 11px/1.2 ui-monospace,Menlo,Consolas,monospace;letter-spacing:.14em;text-transform:uppercase;opacity:.6}
